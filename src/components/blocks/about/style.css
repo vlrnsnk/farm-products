@@ -1,9 +1,11 @@
 .about {
-  min-height: 800px;
+  min-height: 600px;
   flex-direction: column;
   align-content: center;
   position: relative;
   z-index: 1;
+  background-color: #dfecfe;
+  padding: 90px;
 }
 
 .about__text {

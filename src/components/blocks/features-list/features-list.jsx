@@ -7,10 +7,7 @@ import FeatureCard from "../../ui/feature-card/feature-card";
 export default function FeaturesList() {
   return (
     <section className="features-list">
-      <Title text="Features List" />
-      <FeatureCard />
-      <FeatureCard />
-      <FeatureCard />
+      <Title>Features List</Title>
       <FeatureCard />
       <Button>Buy</Button>
     </section>
