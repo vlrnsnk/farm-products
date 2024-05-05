@@ -1,2 +1,5 @@
 .page-wrapper__main {
+  width: 1280px;
+  margin: 0 auto;
+  background-color: #dfecfe;
 }
