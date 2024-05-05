@@ -1,5 +1,45 @@
-.feature-card {
+.feature {
   width: 540px;
-  height: 197px;
-  background-color: #fc9b27;
+  min-height: 197px;
+  background-color: #e1edce;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.feature__header {
+  display: flex;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.feature__img {
+  width: 56px;
+  height: 56px;
+  margin-right: 20px;
+}
+
+.feature_negative {
+  background-color: #f8ddd7;
+}
+
+.feature__owner {
+  min-height: 25px;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  font-family: "Inter", "Arial", sans-serif;
+  color: #ffffff;
+  background-color: #88aa4d;
+  padding: 4px 10px;
+  margin-bottom: 4px;
+}
+
+.feature_negative__owner {
+  background-color: #f75531;
+}
+
+.feature__text {
+  margin: 0;
+  padding: 0;
+  text-align: left;
 }

@@ -6,9 +6,13 @@ import FeatureCard from "../../ui/feature-card/feature-card";
 
 export default function FeaturesList() {
   return (
-    <section className="features-list">
-      <Title>Features List</Title>
-      <FeatureCard />
+    <section className="features">
+      <Title>Why are farm products better?</Title>
+      <ul className="features__list">
+        <li className="features__item">
+          <FeatureCard />
+        </li>
+      </ul>
       <Button>Buy</Button>
     </section>
   );

@@ -7,7 +7,7 @@ export default function FeatureCard() {
     <section className="feature">
       <header className="feature__header">
         <img
-          className="feature_img"
+          className="feature__img"
           width={56}
           height={56}
           src="https://i.ibb.co/xGg2GfP/eat-1.png"
@@ -19,10 +19,8 @@ export default function FeatureCard() {
         </div>
       </header>
       <p className="feature__text">
-        Homemade sausage made of&nbsp;meat, salt and&nbsp;spices
-        and&nbsp;sausage from&nbsp;the&nbsp;store&nbsp;sausage from a
-        store&nbsp;&mdash; two products so different that they are not even
-        related
+        Homemade sausage made from meat, salt and spices and sausage from the
+        store are two products so different that they aren't even related
       </p>
     </section>
   );
