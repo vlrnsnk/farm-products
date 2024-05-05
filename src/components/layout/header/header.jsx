@@ -9,7 +9,7 @@ export default function Header() {
     <header className="header">
       <Logo />
       <Nav />
-      <Button />
+      <Button>Buy</Button>
     </header>
   );
 }

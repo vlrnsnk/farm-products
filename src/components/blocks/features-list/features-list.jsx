@@ -12,7 +12,7 @@ export default function FeaturesList() {
       <FeatureCard />
       <FeatureCard />
       <FeatureCard />
-      <Button />
+      <Button>Buy</Button>
     </section>
   );
 }
