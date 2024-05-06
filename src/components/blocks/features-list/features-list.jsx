@@ -12,6 +12,15 @@ export default function FeaturesList() {
         <li className="features__item">
           <FeatureCard />
         </li>
+        <li className="features__item">
+          <FeatureCard />
+        </li>
+        <li className="features__item">
+          <FeatureCard />
+        </li>
+        <li className="features__item">
+          <FeatureCard />
+        </li>
       </ul>
       <Button>Buy</Button>
     </section>

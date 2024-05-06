@@ -1,5 +1,15 @@
-.features-list {
+.features {
   min-height: 843px;
   background-color: #f6f6f6;
   padding: 90px;
+  text-align: center;
+}
+
+.features__list {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 64px 0;
+  padding: 0;
+  gap: 20px;
 }
