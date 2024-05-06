@@ -4,25 +4,18 @@ import Button from "../../ui/button/button";
 import Title from "../../ui/title/title";
 import FeatureCard from "../../ui/feature-card/feature-card";
 
-export default function FeaturesList() {
-  return (
+export default function FeaturesList({ features }) {
+  return features && features.length ? (
     <section className="features">
       <Title>Why are farm products better?</Title>
       <ul className="features__list">
-        <li className="features__item">
-          <FeatureCard />
-        </li>
-        <li className="features__item">
-          <FeatureCard />
-        </li>
-        <li className="features__item">
-          <FeatureCard />
-        </li>
-        <li className="features__item">
-          <FeatureCard />
-        </li>
+        {features.map((feature) => (
+          <li className="features__item" key={feature.id}>
+            <FeatureCard {...feature} />
+          </li>
+        ))}
       </ul>
       <Button>Buy</Button>
     </section>
-  );
+  ) : null;
 }
