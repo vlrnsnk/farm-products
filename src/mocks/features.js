@@ -9,7 +9,7 @@ const features = [
   },
   {
     id: 1,
-    title: "The food is so much tastier",
+    title: "Expired products",
     owner: "Store-bought products",
     isNegative: true,
     img: "https://i.ibb.co/rHt4pHQ/garbage-1.png",
@@ -17,7 +17,7 @@ const features = [
   },
   {
     id: 2,
-    title: "The food is so much tastier",
+    title: "Natural products",
     owner: "Farm products",
     isNegative: false,
     img: "https://i.ibb.co/TryK8n2/sprout-1.png",
@@ -25,7 +25,7 @@ const features = [
   },
   {
     id: 3,
-    title: "The food is so much tastier",
+    title: "Некачественное мясо",
     owner: "Store-bought products",
     isNegative: true,
     img: "https://i.ibb.co/d63ZBPp/no-meat-1.png",
