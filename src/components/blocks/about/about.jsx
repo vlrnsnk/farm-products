@@ -1,11 +1,11 @@
 import React from "react";
 import "./style.css";
-import Title from "../../ui/title/title";
+import Title, { TitleSize } from "../../ui/title/title";
 
 export default function About() {
   return (
     <section className="about">
-      <Title>
+      <Title size={TitleSize.BIG}>
         Farm products store
         <br /> with delivery
       </Title>

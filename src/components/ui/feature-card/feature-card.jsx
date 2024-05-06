@@ -1,6 +1,6 @@
 import React from "react";
 import "./style.css";
-import Title from "../title/title";
+import Title, { TitleSize } from "../title/title";
 
 export default function FeatureCard() {
   return (
@@ -15,7 +15,9 @@ export default function FeatureCard() {
         />
         <div>
           <span className="feature__owner">Farm products</span>
-          <Title>The food tastes so much better</Title>
+          <Title size={TitleSize.EXTRA_SMALL}>
+            The food tastes so much better
+          </Title>
         </div>
       </header>
       <p className="feature__text">
