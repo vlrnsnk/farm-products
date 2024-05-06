@@ -25,7 +25,7 @@ const features = [
   },
   {
     id: 3,
-    title: "Некачественное мясо",
+    title: "Substandard meat",
     owner: "Store-bought products",
     isNegative: true,
     img: "https://i.ibb.co/d63ZBPp/no-meat-1.png",
