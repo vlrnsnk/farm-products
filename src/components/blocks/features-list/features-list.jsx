@@ -7,7 +7,7 @@ import FeatureCard from "../../ui/feature-card/feature-card";
 export default function FeaturesList({ features }) {
   return features && features.length ? (
     <section className="features">
-      <Title>Why are farm products better?</Title>
+      <Title as="h2">Why are farm products better?</Title>
       <ul className="features__list">
         {features.map((feature) => (
           <li className="features__item" key={feature.id}>

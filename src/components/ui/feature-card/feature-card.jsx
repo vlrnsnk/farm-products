@@ -19,7 +19,9 @@ export default function FeatureCard({ title, owner, isNegative, img, text }) {
           >
             {owner}
           </span>
-          <Title size={TitleSize.EXTRA_SMALL}>{title}</Title>
+          <Title size={TitleSize.EXTRA_SMALL} as="h3">
+            {title}
+          </Title>
         </div>
       </header>
       <p
