@@ -1,10 +1,17 @@
 import React from "react";
-import "./style.css";
+import StyledButton from "./styles";
 
-export default function Button({ children }) {
+function Button({ children, link, maxWidth, className, onClick, ...props }) {
   return (
-    <button type="button" className="button">
+    <StyledButton
+      {...props}
+      $maxWidth={maxWidth}
+      {...(link ? { to: link } : { as: "button", onClick, type: "button" })}
+      className={className}
+    >
       {children}
-    </button>
+    </StyledButton>
   );
 }
+
+export default Button;
