@@ -1,17 +1,18 @@
 import styled from "styled-components";
 
-const StyledButton = styled.a`
+export const StyledButton = styled.a`
   display: block;
   min-height: 60px;
   padding: 0 24px;
   min-width: ${(props) => (props.$maxWidth ? "100%" : "260px")};
   max-width: 700px;
   font-size: ${(props) => props.theme.fontSizeDefault};
-  font-weight: 700;
+  font-weight: bold;
   line-height: 58px;
   text-align: center;
   text-decoration: none;
-  color: ${(props) => props.theme.buttonColor};
+  color: ${(props) => props.theme.colorWhite};
+  background-color: ${(props) => props.theme.buttonColor};
   border: none;
   background-image: none;
   box-shadow: none;
@@ -38,5 +39,3 @@ const StyledButton = styled.a`
     background-color: ${(props) => props.theme.buttonColor};
   }
 `;
-
-export default StyledButton;

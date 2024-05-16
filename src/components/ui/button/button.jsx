@@ -1,5 +1,5 @@
 import React from "react";
-import StyledButton from "./styles";
+import { StyledButton } from "./styles";
 
 function Button({ children, link, maxWidth, className, onClick, ...props }) {
   return (
