@@ -1,13 +1,14 @@
 import React from "react";
-import "./style.css";
+import { StyledSection, Copyright } from "./styles";
 import Logo from "../../ui/logo/logo";
-import Copyright from "../../ui/copyright/copyright";
 
 export default function Footer() {
+  const currentYear = new Date().getFullYear();
+
   return (
-    <footer className="footer">
+    <StyledSection as="footer">
       <Logo />
-      <Copyright />
-    </footer>
+      <Copyright>Copyright © {currentYear}</Copyright>
+    </StyledSection>
   );
 }
