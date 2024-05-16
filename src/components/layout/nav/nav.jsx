@@ -1,6 +1,12 @@
-import React from 'react';
-import "./style.css";
+import React from "react";
+import Button from "../../ui/button/button";
 
-export default function Nav() {
-    return <nav></nav>;
-};
+function Nav() {
+  return (
+    <nav>
+      <Button link="/buy">Buy</Button>
+    </nav>
+  );
+}
+
+export default Nav;
