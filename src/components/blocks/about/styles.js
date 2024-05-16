@@ -22,8 +22,6 @@ const StyledAbout = styled(Section)`
     width: 446px;
     height: 563px;
     margin: auto;
-    right: 177px;
-    top: 56px;
     background-image: url(${aboutImage});
   }
 `;

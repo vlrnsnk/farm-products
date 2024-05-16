@@ -1,21 +1,22 @@
 import React from "react";
-import "./style.css";
-import Button from "../../ui/button/button";
-import Title from "../../ui/title/title";
 import FeatureCard from "../../ui/feature-card/feature-card";
+import { Ul, Li } from "../../styled";
+import { Features, StyledButton, StyledTitle } from "./styles";
 
-export default function FeaturesList({ features }) {
+function FeaturesList({ features }) {
   return features && features.length ? (
-    <section className="features">
-      <Title as="h2">Why are farm products better?</Title>
-      <ul className="features__list">
+    <Features>
+      <StyledTitle as="h2">Why are farm products better?</StyledTitle>
+      <Ul $isGridList>
         {features.map((feature) => (
-          <li className="features__item" key={feature.id}>
+          <Li key={feature.id}>
             <FeatureCard {...feature} />
-          </li>
+          </Li>
         ))}
-      </ul>
-      <Button>Buy</Button>
-    </section>
+      </Ul>
+      <StyledButton link="/buy">Buy</StyledButton>
+    </Features>
   ) : null;
 }
+
+export default FeaturesList;
