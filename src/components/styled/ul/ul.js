@@ -2,9 +2,9 @@ import styled, { css } from "styled-components";
 
 const gridList = css`
   margin-left: ${(props) =>
-    props.$indent ? `-${props.$indent}px` : `-${props.theme.$indent}`};
+    props.$indent ? `-${props.$indent}px` : `-${props.theme.indent}`};
   margin-top: ${(props) =>
-    props.$indent ? `-${props.$indent}px` : `-${props.theme.$indent}`};
+    props.$indent ? `-${props.$indent}px` : `-${props.theme.indent}`};
   font-size: 0;
   line-height: 0;
   text-align: ${(props) => props.$align || "center"};
@@ -18,7 +18,7 @@ const gridList = css`
     font-size: ${(props) =>
       props.$fontSize ? `${props.$fontSize}px` : props.theme.fontSizeDefault};
     line-height: ${(props) =>
-      props.$lineHeight ? `${props.$lineHeight}` : "27px"};
+      props.$lineHeight ? `${props.$lineHeight}px` : "27px"};
     vertical-align: top;
   }
 `;
@@ -26,7 +26,7 @@ const gridList = css`
 const Ul = styled.ul`
   margin: 0;
   padding: 0;
-  ${(props) => (props.$isGridList ? gridList : "")};
+  ${(props) => (props.$isGridList ? gridList : "")}
 `;
 
 export default Ul;
