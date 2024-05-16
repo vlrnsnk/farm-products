@@ -1,15 +1,15 @@
 import React from "react";
-import "./style.css";
+import { StyledSection } from "./styles";
 import Logo from "../../ui/logo/logo";
 import Nav from "../../layout/nav/nav";
-import Button from "../../ui/button/button";
 
-export default function Header() {
+function Header() {
   return (
-    <header className="header">
+    <StyledSection as="header">
       <Logo />
       <Nav />
-      <Button>Buy</Button>
-    </header>
+    </StyledSection>
   );
 }
+
+export default Header;
