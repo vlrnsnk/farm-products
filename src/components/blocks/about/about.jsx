@@ -1,16 +1,18 @@
 import React from "react";
-import "./style.css";
+import { StyledAbout, Text } from "./styles";
 import Title, { TitleSize } from "../../ui/title/title";
 
-export default function About() {
+function About() {
   return (
-    <section className="about">
-      <Title size={TitleSize.BIG}>Farm products store with delivery</Title>
-      <p className="about__text">
+    <StyledAbout>
+      <Title size={TitleSize.BIG}> Farm products store with delivery</Title>
+      <Text>
         All products are made to order. Farmers start preparing the products the
         day before the order is sent to customers. That's why we take orders in
         advance and deliver products as fresh as possible.
-      </p>
-    </section>
+      </Text>
+    </StyledAbout>
   );
 }
+
+export default About;
