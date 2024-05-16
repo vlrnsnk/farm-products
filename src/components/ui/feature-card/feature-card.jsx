@@ -1,33 +1,22 @@
 import React from "react";
-import "./style.css";
+import { Feature, Image, Owner, Header, Text } from "./styles";
 import Title, { TitleSize } from "../title/title";
 
-export default function FeatureCard({ title, owner, isNegative, img, text }) {
+function FeatureCard({ title, owner, text, isNegative, img }) {
   return (
-    <section className={`feature${isNegative ? " feature_negative" : ""}`}>
-      <header className="feature__header">
-        <img
-          className="feature__img"
-          width={56}
-          height={56}
-          src={img}
-          alt={title}
-        />
+    <Feature isNegative={isNegative}>
+      <Header>
+        <Image width={56} height={56} src={img} alt={title} />
         <div>
-          <span
-            className={`feature__owner${isNegative ? " feature_negative__owner" : ""}`}
-          >
-            {owner}
-          </span>
-          <Title size={TitleSize.EXTRA_SMALL} as="h3">
+          <Owner isNegative={isNegative}>{owner}</Owner>
+          <Title as="h3" size={TitleSize.EXTRA_SMALL}>
             {title}
           </Title>
         </div>
-      </header>
-      <p
-        className="feature__text"
-        dangerouslySetInnerHTML={{ __html: text }}
-      ></p>
-    </section>
+      </Header>
+      <Text dangerouslySetInnerHTML={{ __html: text }}></Text>
+    </Feature>
   );
 }
+
+export default FeatureCard;
