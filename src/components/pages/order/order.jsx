@@ -5,10 +5,16 @@ import {
   AddressInput,
   PriceLabel,
   PriceValue,
+  ProductSwiper,
 } from "./styles";
 import Panel from "../../../components/ui/panel/panel";
 import Title, { TitleSize } from "../../ui/title/title";
 import Button from "../../ui/button/button";
+import { SwiperSlide } from "swiper/react";
+import SwiperCore, { Pagination, Mousewheel, Scrollbar } from "swiper/core";
+import "swiper/swiper-bundle.min.css";
+
+SwiperCore.use([Pagination, Mousewheel, Scrollbar]);
 
 function Order({ products }) {
   return (
@@ -30,7 +36,19 @@ function Order({ products }) {
           <Button maxWidth>Buy</Button>
         </Panel>
       </LeftColumn>
-      <div>slider with products goes here</div>
+      <ProductSwiper
+        spaceBetween={12}
+        direction="vertical"
+        slidesPerView="auto"
+        scrollbar={{ draggable: true }}
+        mousewheel
+        pagination={{ type: "fraction" }}
+      >
+        $
+        {products.map((product) => (
+          <SwiperSlide key={product.id}></SwiperSlide>
+        ))}
+      </ProductSwiper>
     </StyledOrder>
   );
 }
