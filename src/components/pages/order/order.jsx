@@ -1,5 +1,5 @@
 import React from "react";
-import { StyledOrder, LeftColumn } from "./styles";
+import { StyledOrder, LeftColumn, AddressInput } from "./styles";
 import Panel from "../../../components/ui/panel/panel";
 import Title, { TitleSize } from "../../ui/title/title";
 
@@ -17,6 +17,7 @@ function Order() {
           <Title size={TitleSize.EXTRA_SMALL} marginBottom={24}>
             Place order
           </Title>
+          <AddressInput placeholder="Enter your delivery address" />
         </Panel>
       </LeftColumn>
       <div>slider with products goes here</div>

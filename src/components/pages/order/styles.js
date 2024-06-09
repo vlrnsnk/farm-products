@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { Section } from "../../../components/styled";
+import TextInput from "../../../components/ui/text-input/text-input";
 
 const leftWidth = "353px";
 
@@ -19,4 +20,8 @@ export const LeftColumn = styled.div`
   padding-right: ${(props) => props.theme.indent};
   overflow-y: overlay;
   max-height: 100%;
+`;
+
+export const AddressInput = styled(TextInput)`
+  margin-bottom: ${(props) => props.theme.indent};
 `;
