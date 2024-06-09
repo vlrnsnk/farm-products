@@ -8,6 +8,7 @@ import {
 } from "./styles";
 import Panel from "../../../components/ui/panel/panel";
 import Title, { TitleSize } from "../../ui/title/title";
+import Button from "../../ui/button/button";
 
 function Order() {
   return (
@@ -26,6 +27,7 @@ function Order() {
           <AddressInput placeholder="Enter your delivery address" />
           <PriceLabel as="span">Price</PriceLabel>
           <PriceValue>400</PriceValue>
+          <Button maxWidth>Buy</Button>
         </Panel>
       </LeftColumn>
       <div>slider with products goes here</div>
