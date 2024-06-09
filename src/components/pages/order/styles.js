@@ -1,6 +1,8 @@
 import styled from "styled-components";
 import { Section } from "../../../components/styled";
 
+const leftWidth = "353px";
+
 export const StyledOrder = styled(Section)`
   position: absolute;
   top: ${(props) => props.theme.headerHeight};
@@ -10,4 +12,11 @@ export const StyledOrder = styled(Section)`
   padding-bottom: 0;
   background-color: ${(props) => props.theme.backgroundColorGray};
   max-width: ${(props) => props.theme.pageWidth};
+`;
+
+export const LeftColumn = styled.div`
+  width: ${leftWidth};
+  padding-right: ${(props) => props.theme.indent};
+  overflow-y: overlay;
+  max-height: 100%;
 `;
