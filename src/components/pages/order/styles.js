@@ -30,3 +30,10 @@ export const PriceLabel = styled(Label)`
   font-size: 14px;
   margin-bottom: 6px;
 `;
+
+export const PriceValue = styled.span`
+  display: block;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 30px;
+`;

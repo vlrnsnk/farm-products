@@ -1,5 +1,11 @@
 import React from "react";
-import { StyledOrder, LeftColumn, AddressInput, PriceLabel } from "./styles";
+import {
+  StyledOrder,
+  LeftColumn,
+  AddressInput,
+  PriceLabel,
+  PriceValue,
+} from "./styles";
 import Panel from "../../../components/ui/panel/panel";
 import Title, { TitleSize } from "../../ui/title/title";
 
@@ -19,6 +25,7 @@ function Order() {
           </Title>
           <AddressInput placeholder="Enter your delivery address" />
           <PriceLabel as="span">Price</PriceLabel>
+          <PriceValue>400</PriceValue>
         </Panel>
       </LeftColumn>
       <div>slider with products goes here</div>
