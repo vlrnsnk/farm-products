@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Section } from "../../../components/styled";
+import { Section, Label } from "../../../components/styled";
 import TextInput from "../../../components/ui/text-input/text-input";
 
 const leftWidth = "353px";
@@ -24,4 +24,9 @@ export const LeftColumn = styled.div`
 
 export const AddressInput = styled(TextInput)`
   margin-bottom: ${(props) => props.theme.indent};
+`;
+
+export const PriceLabel = styled(Label)`
+  font-size: 14px;
+  margin-bottom: 6px;
 `;
