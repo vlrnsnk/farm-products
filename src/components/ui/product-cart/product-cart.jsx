@@ -12,7 +12,7 @@ function ProductCart({ product }) {
           {product.name}
         </ProductTitle>
         <Price>
-          {product.price} руб. / {product.weight} гр.
+          {product.price} ₴ / {product.weight} g.
         </Price>
       </ContentWrapper>
     </Panel>
