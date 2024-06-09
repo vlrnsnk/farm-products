@@ -13,6 +13,7 @@ import Button from "../../ui/button/button";
 import { SwiperSlide } from "swiper/react";
 import SwiperCore, { Pagination, Mousewheel, Scrollbar } from "swiper/core";
 import "swiper/swiper-bundle.min.css";
+import ProductCart from "../../ui/product-cart/product-cart";
 
 SwiperCore.use([Pagination, Mousewheel, Scrollbar]);
 
@@ -46,7 +47,9 @@ function Order({ products }) {
       >
         $
         {products.map((product) => (
-          <SwiperSlide key={product.id}></SwiperSlide>
+          <SwiperSlide key={product.id}>
+            <ProductCart product={product} />
+          </SwiperSlide>
         ))}
       </ProductSwiper>
     </StyledOrder>
