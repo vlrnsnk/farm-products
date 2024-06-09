@@ -5,13 +5,13 @@ import MainPage from "../../pages/main-page/main-page";
 import Order from "../../pages/order/order";
 import Footer from "../footer/footer";
 
-export default function PageWrapper({ features }) {
+export default function PageWrapper({ features, products }) {
   return (
     <>
       <Header />
       <Main>
         {/* <MainPage features={features} /> */}
-        <Order />
+        <Order products={products} />
       </Main>
       <Footer />
     </>

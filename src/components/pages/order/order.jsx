@@ -10,7 +10,7 @@ import Panel from "../../../components/ui/panel/panel";
 import Title, { TitleSize } from "../../ui/title/title";
 import Button from "../../ui/button/button";
 
-function Order() {
+function Order({ products }) {
   return (
     <StyledOrder as="form">
       <LeftColumn>
