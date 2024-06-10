@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   StyledOrder,
   LeftColumn,
@@ -6,6 +6,7 @@ import {
   PriceLabel,
   PriceValue,
   ProductSwiper,
+  CheckboxLabel
 } from "./styles";
 import Panel from "../../../components/ui/panel/panel";
 import Title, { TitleSize } from "../../ui/title/title";
@@ -14,10 +15,13 @@ import { SwiperSlide } from "swiper/react";
 import SwiperCore, { Pagination, Mousewheel, Scrollbar } from "swiper/core";
 import "swiper/swiper-bundle.min.css";
 import ProductCart from "../../ui/product-cart/product-cart";
+import CheckboxList from "../../ui/checkbox-list/checkbox-list";
 
 SwiperCore.use([Pagination, Mousewheel, Scrollbar]);
 
 function Order({ products }) {
+  const [selectProductIds, setSelectProductIds] = useState([]);
+
   return (
     <StyledOrder as="form">
       <LeftColumn>
@@ -25,7 +29,17 @@ function Order({ products }) {
           <Title as="h2" size={TitleSize.EXTRA_SMALL} marginBottom={12}>
             Choose your products
           </Title>
-          Checkbox with products list
+          <CheckboxList
+            labelComponent={CheckboxLabel}
+            name={"select-products"}
+            isGridList={false}
+            options={products.map((product) => ({
+              value: product.id,
+              title: product.name,
+            }))}
+            selectValues={selectProductIds}
+            onChange={setSelectProductIds}
+          />
         </Panel>
         <Panel>
           <Title size={TitleSize.EXTRA_SMALL} marginBottom={24}>
