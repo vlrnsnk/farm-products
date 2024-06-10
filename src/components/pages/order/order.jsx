@@ -6,7 +6,7 @@ import {
   PriceLabel,
   PriceValue,
   ProductSwiper,
-  CheckboxLabel
+  CheckboxLabel,
 } from "./styles";
 import Panel from "../../../components/ui/panel/panel";
 import Title, { TitleSize } from "../../ui/title/title";
@@ -21,6 +21,13 @@ SwiperCore.use([Pagination, Mousewheel, Scrollbar]);
 
 function Order({ products }) {
   const [selectProductIds, setSelectProductIds] = useState([]);
+  const [swiperRef, setSwiperRef] = useState(null);
+
+  const handleOnClickProduct = (value, index) => {
+    if (!selectProductIds.includes(value)) {
+      swiperRef.slideTo(index, 0);
+    }
+  };
 
   return (
     <StyledOrder as="form">
@@ -39,6 +46,7 @@ function Order({ products }) {
             }))}
             selectValues={selectProductIds}
             onChange={setSelectProductIds}
+            onClickLabel={handleOnClickProduct}
           />
         </Panel>
         <Panel>
@@ -58,6 +66,7 @@ function Order({ products }) {
         scrollbar={{ draggable: true }}
         mousewheel
         pagination={{ type: "fraction" }}
+        onSwiper={setSwiperRef}
       >
         $
         {products.map((product) => (
