@@ -38,6 +38,16 @@ function Order({ products }) {
     0,
   );
 
+  const [address, setAddress] = useState("");
+
+  const handleBuyClick = () => {
+    alert(
+      `Thank you for your order, you bought:\n${selectProducts.map(
+        (product) => `${product.name} - ${product.price} uah\n`,
+      )}\nTotal: ${fullPrice} uah.\nDelivery to the address: ${address}.`,
+    );
+  };
+
   return (
     <StyledOrder as="form">
       <LeftColumn>
@@ -62,10 +72,16 @@ function Order({ products }) {
           <Title size={TitleSize.EXTRA_SMALL} marginBottom={24}>
             Place order
           </Title>
-          <AddressInput placeholder="Enter your delivery address" />
+          <AddressInput
+            placeholder="Enter your delivery address"
+            value={address}
+            onChange={(e) => setAddress(e.target.value)}
+          />
           <PriceLabel as="span">Price</PriceLabel>
           <PriceValue value={fullPrice} />
-          <Button maxWidth>Buy</Button>
+          <Button maxWidth onClick={handleBuyClick}>
+            Buy
+          </Button>
         </Panel>
       </LeftColumn>
       <ProductSwiper
