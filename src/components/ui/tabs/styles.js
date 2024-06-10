@@ -27,7 +27,7 @@ export const TabButton = styled(Button)`
   padding-top: 8px;
   padding-bottom: 8px;
   font-size: 14px;
-  line-height: 1.5px;
+  line-height: 1.5;
   font-weight: 400;
   ${(props) =>
     props.$isSelect
