@@ -48,7 +48,7 @@ function Order({ products }) {
     );
   };
 
-  return (
+  return products && products.length ? (
     <StyledOrder as="form">
       <LeftColumn>
         <Panel marginBottom={20} paddingTop={24} paddingBottom={10}>
@@ -79,7 +79,11 @@ function Order({ products }) {
           />
           <PriceLabel as="span">Price</PriceLabel>
           <PriceValue value={fullPrice} />
-          <Button maxWidth onClick={handleBuyClick}>
+          <Button
+            maxWidth
+            onClick={handleBuyClick}
+            disabled={!(selectProductIds.length && address)}
+          >
             Buy
           </Button>
         </Panel>
@@ -101,6 +105,8 @@ function Order({ products }) {
         ))}
       </ProductSwiper>
     </StyledOrder>
+  ) : (
+    "The products were too delicious and they sold out."
   );
 }
 
