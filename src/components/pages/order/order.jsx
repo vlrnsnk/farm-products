@@ -29,6 +29,15 @@ function Order({ products }) {
     }
   };
 
+  const selectProducts = selectProductIds.map((id) =>
+    products.find((product) => product.id === id),
+  );
+
+  const fullPrice = selectProducts.reduce(
+    (sum, product) => (sum += product.price),
+    0,
+  );
+
   return (
     <StyledOrder as="form">
       <LeftColumn>
@@ -55,7 +64,7 @@ function Order({ products }) {
           </Title>
           <AddressInput placeholder="Enter your delivery address" />
           <PriceLabel as="span">Price</PriceLabel>
-          <PriceValue>400</PriceValue>
+          <PriceValue value={fullPrice} />
           <Button maxWidth>Buy</Button>
         </Panel>
       </LeftColumn>
