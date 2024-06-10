@@ -3,12 +3,22 @@ import Panel from "../../ui/panel/panel";
 import { ProductImage, ContentWrapper, ProductTitle, Price } from "./styles";
 import { TitleSize } from "../title/title";
 import Tabs from "../tabs/tabs";
+import OptionsList from "../options-list/options-list";
 
 function ProductCart({ product }) {
   const tabsList = [
-    { title: "Description", content: product.description },
-    { title: "Characteristics", content: product.description },
-    { title: "Properties", content: product.description },
+    {
+      title: "Description",
+      content: product.description,
+    },
+    {
+      title: "Characteristics",
+      content: <OptionsList list={product.specifications} />,
+    },
+    {
+      title: "Properties",
+      content: <OptionsList list={product.structure} />,
+    },
   ];
 
   return (
