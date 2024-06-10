@@ -6,9 +6,9 @@ import Tabs from "../tabs/tabs";
 
 function ProductCart({ product }) {
   const tabsList = [
-    { title: "Description" },
-    { title: "Characteristics" },
-    { title: "Properties" },
+    { title: "Description", content: product.description },
+    { title: "Characteristics", content: product.description },
+    { title: "Properties", content: product.description },
   ];
 
   return (
