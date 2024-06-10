@@ -1,11 +1,15 @@
 import React from "react";
-import { Header, Content } from "./styles";
+import { Header, Content, TabListItem } from "./styles";
 
-function Tabs() {
+function Tabs({ tabsList = [], maxContentHeight }) {
   return (
     <div>
-      <Header></Header>
-      <Content></Content>
+      <Header>
+        {tabsList.map((tab, index) => (
+          <TabListItem key={`tab${index * 10}`}></TabListItem>
+        ))}
+      </Header>
+      <Content $maxContentHeight={maxContentHeight}></Content>
     </div>
   );
 }
