@@ -1,19 +1,19 @@
 import React from "react";
-import { Main } from "./styles";
 import Header from "../header/header";
-import MainPage from "../../pages/main-page/main-page";
-import Order from "../../pages/order/order";
 import Footer from "../footer/footer";
+import { Outlet } from "react-router-dom";
+import { Main } from "./styles";
 
-export default function PageWrapper({ features, products }) {
+function PageWrapper({ features, products }) {
   return (
     <>
       <Header />
       <Main>
-        {/* <MainPage features={features} /> */}
-        <Order products={products} />
+        <Outlet />
       </Main>
       <Footer />
     </>
   );
 }
+
+export default PageWrapper;

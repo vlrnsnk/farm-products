@@ -5,6 +5,8 @@ import features from "../../mocks/features";
 import products from "../../mocks/products";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { AppRoute } from "../../const.js";
+import MainPage from "../pages/main-page/main-page";
+import Order from "../pages/order/order";
 
 function App() {
   return (
@@ -12,15 +14,11 @@ function App() {
       <GlobalStyle />
       <Router>
         <Routes>
-          <Route exact path={AppRoute.MAIN}>
+          <Route path={AppRoute.MAIN} element={<PageWrapper />}>
+            <Route index element={<MainPage features={features} />} />
             <Route
-              index
-              element={<PageWrapper features={features} products={products} />}
-            />
-            <Route
-              exact
-              path={AppRoute.ORDER}
-              element={<PageWrapper features={features} products={products} />}
+              path={AppRoute.ORDER.replace(AppRoute.MAIN, "")}
+              element={<Order products={products} />}
             />
           </Route>
         </Routes>
