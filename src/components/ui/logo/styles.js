@@ -1,6 +1,7 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
-const StyledLogo = styled.a`
+export const StyledLogo = styled(Link)`
   display: flex;
   margin-left: -4px;
   height: 44px;
@@ -16,7 +17,7 @@ const StyledLogo = styled.a`
   }
 `;
 
-const Text = styled.span`
+export const Text = styled.span`
   display: flex;
   min-height: 44px;
   margin-left: 25px;
@@ -25,5 +26,3 @@ const Text = styled.span`
   line-height: 44px;
   color: ${(props) => props.theme.colorBlackForText};
 `;
-
-export { StyledLogo, Text };
