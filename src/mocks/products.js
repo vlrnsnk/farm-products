@@ -6,7 +6,7 @@ const products = [
       "Thigh fillet without skin and bone. The poultry is kept in free-range coops and fed natural grain feed, which positively affects the taste of the meat. The thigh fillet has a rich flavor and meaty aroma.",
     price: 400,
     weight: 700,
-    image: "https://i.ibb.co/QHNkcKM/Rectangle-2.png",
+    image: "https://i.ibb.co/sPrKXGb/chicken-thigh-fillet.png",
     specifications: [
       {
         property: "Weight",
@@ -44,7 +44,7 @@ const products = [
       "Goose thigh fillet is a thinly sliced product that will appeal to all lovers of dry-cured products. The unusual taste, appetizing aroma, and subtle aftertaste distinguish dry-cured goose from other similar products.",
     price: 500,
     weight: 600,
-    image: "https://i.ibb.co/dc3H13G/Rectangle-2-1.png",
+    image: "https://i.ibb.co/7tPJRrW/goose-thigh-fillet.png",
     specifications: [
       {
         property: "Weight",
@@ -82,7 +82,7 @@ const products = [
       "Basic semi-hard cheese. Thanks to fenugreek seeds, the cheese acquires a nutty aftertaste that perfectly complements the creamy notes. Aged for 1 month.",
     price: 400,
     weight: 300,
-    image: "https://i.ibb.co/ZYDZjJk/2.jpg",
+    image: "https://i.ibb.co/ZxQmHT4/cheese-amst-with-fenugreek.jpg",
     specifications: [
       {
         property: "Weight",
@@ -124,7 +124,7 @@ const products = [
       "Soft cheese made from pasteurized cow's milk with the addition of white mold cultures.",
     price: 390,
     weight: 200,
-    image: "https://i.ibb.co/4TCJV5r/3.jpg",
+    image: "https://i.ibb.co/mTyFCc3/cheese-camembert.jpg",
     specifications: [
       {
         property: "Weight",
@@ -166,7 +166,7 @@ const products = [
       "Honey harvest of 2021. Unusually delicate May honey, collected in the subtropical groves of the North Caucasus reserve, reveals a whole range of citrus notes.",
     price: 590,
     weight: 200,
-    image: "https://i.ibb.co/2jS02Jk/4.jpg",
+    image: "https://i.ibb.co/wLTVF6V/may-mountain-honey.jpg",
     specifications: [
       {
         property: "Weight",
