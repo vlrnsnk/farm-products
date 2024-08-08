@@ -15,6 +15,16 @@ const Panel = styled(Section)`
   width: ${(props) => props.$width || "auto"};
   display: block;
   background-color: ${(props) => props.theme.colorWhite};
+
+  @media screen and (max-width: 1279px) {
+    display: flex;
+  }
+
+  @media screen and (max-width: 906px) {
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+  }
 `;
 
 export default Panel;

@@ -3,15 +3,19 @@ import { Img } from "../../styled";
 import Title from "../title/title";
 
 export const ProductImage = styled(Img)`
-  width: 248px;
+  max-width: 248px;
   height: 248px;
   margin-right: 20px;
+
+  @media screen and (max-width: 906px) {
+    margin-right: 0;
+  }
 `;
 
 export const ContentWrapper = styled.div`
   position: relative;
   float: right;
-  width: 417px;
+  max-width: 417px;
   min-height: 248px;
   padding-bottom: 30px;
   box-sizing: border-box;
@@ -19,6 +23,10 @@ export const ContentWrapper = styled.div`
 
 export const ProductTitle = styled(Title)`
   margin-bottom: 15px;
+
+  @media screen and (max-width: 906px) {
+    text-align: center;
+  }
 `;
 
 export const Price = styled.span`

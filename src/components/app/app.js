@@ -18,10 +18,10 @@ function App() {
         <Routes>
           <Route path={AppRoute.MAIN} element={<PageWrapper />}>
             <Route index element={<MainPage features={features} />} />
-            {/* <Route
+            <Route
               path={AppRoute.ORDER.replace(AppRoute.MAIN, "")}
               element={<Order products={products} />}
-            /> */}
+            />
           </Route>
         </Routes>
       </Router>

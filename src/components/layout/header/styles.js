@@ -10,6 +10,7 @@ const StyledSection = styled(Section)`
   padding-bottom: 0;
   justify-content: space-between;
   background-color: ${(props) => props.theme.colorWhite};
+  background-color: green;
   box-shadow:
     0 10px 20px rgba(0, 0, 0, 0.04),
     0 2px 6px rgba(0, 0, 0, 0.04),

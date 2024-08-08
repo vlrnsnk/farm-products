@@ -16,6 +16,15 @@ export const StyledOrder = styled(Section)`
   padding-bottom: 0;
   background-color: ${(props) => props.theme.backgroundColorGray};
   max-width: ${(props) => props.theme.pageWidth};
+
+  @media screen and (max-width: 1279px) {
+    position: relative;
+  }
+  
+  @media screen and (max-width: 1023px) {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 `;
 
 export const LeftColumn = styled.div`
@@ -23,6 +32,10 @@ export const LeftColumn = styled.div`
   padding-right: ${(props) => props.theme.indent};
   overflow-y: overlay;
   max-height: 100%;
+
+  @media screen and (max-width: 1023px) {
+    display: flex;
+  }
 `;
 
 export const AddressInput = styled(TextInput)`
@@ -39,7 +52,7 @@ export const PriceValue = styled(Price)`
 `;
 
 export const ProductSwiper = styled(Swiper)`
-  width: 727px;
+  max-width: 727px;
 
   .swiper-pagination {
     display: none;

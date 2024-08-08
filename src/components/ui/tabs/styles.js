@@ -3,7 +3,21 @@ import { Ul, Li, Button } from "../../styled";
 
 export const Header = styled(Ul)`
   display: flex;
+  flex-wrap: wrap;
   margin-bottom: 16px;
+  
+  @media screen and (max-width: 1161px) {
+    gap: 16px;
+    justify-content: center;
+  }
+
+  @media screen and (max-width: 906px) {
+    justify-content: center;
+  }
+
+  @media screen and (max-width: 475px) {
+    
+  }
 `;
 
 export const Content = styled.div`
