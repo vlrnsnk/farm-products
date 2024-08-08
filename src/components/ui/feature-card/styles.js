@@ -5,7 +5,7 @@ const Feature = styled.article`
   width: 540px;
   min-height: 197px;
   padding: 20px;
-  background-color: ${(props) => (props.isNegative ? "#f8ddd7" : "#e1edce")};
+  background-color: ${(props) => (props.$isNegative ? "#f8ddd7" : "#e1edce")};
   box-sizing: border-box;
 `;
 
@@ -33,7 +33,7 @@ const Owner = styled.span`
   line-height: 25px;
   color: ${(props) => props.theme.colorWhite};
   background-color: ${(props) =>
-    props.isNegative
+    props.$isNegative
       ? props.theme.panelBackgroundColorDanger
       : props.theme.panelBackgroundColor};
 `;
