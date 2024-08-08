@@ -1,0 +1,9 @@
+{
+  "name": "Farm Products",
+  "short_name": "Farm Products",
+  "theme_color": "#007aff",
+  "background_color": "#ffffff",
+  "display": "browser",
+  "scope": "/",
+  "start_url": "/"
+}
