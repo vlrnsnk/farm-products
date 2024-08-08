@@ -17,8 +17,8 @@ function App() {
         <ScrollTop />
         <Routes>
           <Route path={AppRoute.MAIN} element={<PageWrapper />}>
-            {/* <Route index element={<MainPage features={features} />} />
-            <Route
+            <Route index element={<MainPage features={features} />} />
+            {/* <Route
               path={AppRoute.ORDER.replace(AppRoute.MAIN, "")}
               element={<Order products={products} />}
             /> */}

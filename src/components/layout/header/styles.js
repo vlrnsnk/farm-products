@@ -20,6 +20,8 @@ const StyledSection = styled(Section)`
   @media screen and (max-width: 620px) {
     flex-direction: column;
     gap: 16px;
+    padding-top: 16px;
+    padding-bottom: 16px;
   }
 `;
 

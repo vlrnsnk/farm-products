@@ -8,9 +8,9 @@ function PageWrapper({ features, products }) {
   return (
     <>
       <Header />
-      {/* <Main>
+      <Main>
         <Outlet />
-      </Main> */}
+      </Main>
       <Footer />
     </>
   );

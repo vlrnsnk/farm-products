@@ -13,6 +13,33 @@ const StyledAbout = styled(Section)`
   z-index: 1;
   flex-direction: column;
 
+  @media screen and (max-width: 1190px) {
+    padding-right: 90px;
+    padding-top: 90px;
+    padding-bottom: 40px;
+    text-align: center;
+  }
+
+  @media screen and (max-width: 768px) {
+    padding-right: 48px;
+    padding-top: 64px;
+  }
+
+  @media screen and (max-width: 425px) {
+    padding-right: 24px;
+    padding-top: 48px;
+  }
+
+  @media screen and (max-width: 375px) {
+    padding-right: 16px;
+    padding-top: 32px;
+  }
+
+  @media screen and (max-width: 320px) {
+    padding-right: 8px;
+    padding-top: 32px;
+  }
+
   &::after {
     position: absolute;
     bottom: 0;
@@ -23,6 +50,10 @@ const StyledAbout = styled(Section)`
     height: 563px;
     margin: auto;
     background-image: url(${aboutImage});
+
+    @media screen and (max-width: 1190px) {
+      display: none;
+    }
   }
 `;
 
@@ -32,6 +63,12 @@ const Text = styled(P)`
   margin-top: 24px;
   padding-right: 116px;
   margin-bottom: 40px;
+
+  @media screen and (max-width: 1190px) {
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
 `;
 
 export { StyledAbout, Text };
