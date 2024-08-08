@@ -30,7 +30,7 @@ function ProductCart({ product }) {
         </ProductTitle>
         <Tabs maxContentHeight="105px" tabsList={tabsList} />
         <Price>
-          {product.price} ₴ / {product.weight} g.
+          {product.price} $ / {product.weight} g.
         </Price>
       </ContentWrapper>
     </Panel>

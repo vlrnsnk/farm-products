@@ -4,7 +4,7 @@ const products = [
     name: "Chicken Thigh Fillet",
     description:
       "Thigh fillet without skin and bone. The poultry is kept in free-range coops and fed natural grain feed, which positively affects the taste of the meat. The thigh fillet has a rich flavor and meaty aroma.",
-    price: 400,
+    price: 20,
     weight: 700,
     image: "./img/products/chicken-thigh-fillet.png",
     specifications: [
@@ -42,7 +42,7 @@ const products = [
     name: "Goose Thigh Fillet",
     description:
       "Goose thigh fillet is a thinly sliced product that will appeal to all lovers of dry-cured products. The unusual taste, appetizing aroma, and subtle aftertaste distinguish dry-cured goose from other similar products.",
-    price: 500,
+    price: 25,
     weight: 600,
     image: "./img/products/goose-thigh-fillet.png",
     specifications: [
@@ -80,7 +80,7 @@ const products = [
     name: 'Cheese "Amst" with Fenugreek',
     description:
       "Basic semi-hard cheese. Thanks to fenugreek seeds, the cheese acquires a nutty aftertaste that perfectly complements the creamy notes. Aged for 1 month.",
-    price: 400,
+    price: 10,
     weight: 300,
     image: "./img/products/cheese-amst-with-fenugreek.jpg",
     specifications: [
@@ -122,7 +122,7 @@ const products = [
     name: 'Cheese "Camembert"',
     description:
       "Soft cheese made from pasteurized cow's milk with the addition of white mold cultures.",
-    price: 390,
+    price: 12,
     weight: 200,
     image: "./img/products/cheese-camembert.jpg",
     specifications: [
@@ -164,7 +164,7 @@ const products = [
     name: "May Mountain Honey",
     description:
       "Honey harvest of 2021. Unusually delicate May honey, collected in the subtropical groves of the North Caucasus reserve, reveals a whole range of citrus notes.",
-    price: 590,
+    price: 9,
     weight: 200,
     image: "./img/products/may-mountain-honey.jpg",
     specifications: [

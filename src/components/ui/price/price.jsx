@@ -8,7 +8,7 @@ const formatPrice = (value) => {
 
 function Price({ value, className }) {
   return (
-    <StyledPrice className={className}>{formatPrice(value)} ₴</StyledPrice>
+    <StyledPrice className={className}>{formatPrice(value)} $</StyledPrice>
   );
 }
 
