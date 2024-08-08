@@ -43,8 +43,8 @@ function Order({ products }) {
   const handleBuyClick = () => {
     alert(
       `Thank you for your order, you bought:\n${selectProducts.map(
-        (product) => `${product.name} - ${product.price} uah\n`,
-      )}\nTotal: ${fullPrice} uah.\nDelivery to the address: ${address}.`,
+        (product) => `${product.name} - ${product.price} USD\n`,
+      )}\nTotal: ${fullPrice} USDS.\nDelivery to the address: ${address}.`,
     );
   };
 
