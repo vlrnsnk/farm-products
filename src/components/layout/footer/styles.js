@@ -20,6 +20,7 @@ const StyledSection = styled(Section)`
   @media screen and (max-width: 515px) {
     flex-direction: column;
     gap: 16px;
+    margin-bottom: 16px;
   }
 `;
 
@@ -28,6 +29,10 @@ const Copyright = styled.span`
   font-size: ${(props) => props.theme.fontSizeDefault};
   vertical-align: middle;
   text-align: right;
+
+  @media screen and (max-width: 515px) {
+    padding-bottom: 16px;
+  }
 `;
 
 export { StyledSection, Copyright };

@@ -18,6 +18,7 @@ const StyledAbout = styled(Section)`
     padding-top: 90px;
     padding-bottom: 40px;
     text-align: center;
+    min-height: auto;
   }
 
   @media screen and (max-width: 768px) {

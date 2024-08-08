@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { Img, P } from "../../styled";
 
 const Feature = styled.article`
-  width: 540px;
+  max-width: 540px;
   min-height: 197px;
   padding: 20px;
   background-color: ${(props) => (props.$isNegative ? "#f8ddd7" : "#e1edce")};

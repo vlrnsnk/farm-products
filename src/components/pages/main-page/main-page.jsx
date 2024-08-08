@@ -6,7 +6,7 @@ function MainPage({ features }) {
   return (
     <>
       <About />
-      {/* <FeaturesList features={features} /> */}
+      <FeaturesList features={features} />
     </>
   );
 }
