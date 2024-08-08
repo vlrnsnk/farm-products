@@ -19,4 +19,8 @@ export const GlobalStyle = createGlobalStyle`
     font-weight: 400;
     color: ${(props) => props.theme.colorBlackForText};
   }
+
+  #root {
+    margin: 0 auto;
+  }
 `;
