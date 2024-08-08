@@ -10,8 +10,8 @@ function PageWrapper({ features, products }) {
       <Header />
       {/* <Main>
         <Outlet />
-      </Main>
-      <Footer /> */}
+      </Main> */}
+      <Footer />
     </>
   );
 }

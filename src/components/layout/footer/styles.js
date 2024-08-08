@@ -7,7 +7,7 @@ const StyledSection = styled(Section)`
   left: 0;
   right: 0;
   display: flex;
-  width: ${(props) => props.theme.pageWidth};
+  max-width: ${(props) => props.theme.pageWidth};
   margin: 0 auto;
   padding-top: 0;
   padding-bottom: 0;
@@ -16,6 +16,11 @@ const StyledSection = styled(Section)`
   justify-content: space-between;
   align-items: center;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
+
+  @media screen and (max-width: 515px) {
+    flex-direction: column;
+    gap: 16px;
+  }
 `;
 
 const Copyright = styled.span`
