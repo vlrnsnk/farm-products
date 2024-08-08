@@ -44,7 +44,7 @@ function Order({ products }) {
     alert(
       `Thank you for your order, you bought:\n${selectProducts.map(
         (product) => `${product.name} - ${product.price} USD\n`,
-      )}\nTotal: ${fullPrice} USDS.\nDelivery to the address: ${address}.`,
+      )}\nTotal: ${fullPrice} USD.\nDelivery to the address: ${address}.`,
     );
   };
 
