@@ -99,7 +99,6 @@ function Order({ products }) {
         allowTouchMove={true}
         touchReleaseOnEdge={true}
       >
-        $
         {products.map((product) => (
           <SwiperSlide key={product.id}>
             <ProductCart product={product} />

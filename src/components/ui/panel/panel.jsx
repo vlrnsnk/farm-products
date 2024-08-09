@@ -18,6 +18,9 @@ const Panel = styled(Section)`
 
   @media screen and (max-width: 1279px) {
     display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
   }
 
   @media screen and (max-width: 906px) {

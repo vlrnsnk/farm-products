@@ -19,11 +19,14 @@ export const StyledOrder = styled(Section)`
 
   @media screen and (max-width: 1279px) {
     position: relative;
+    top: 0;
+    padding-bottom: 101px;
   }
   
   @media screen and (max-width: 1023px) {
     display: flex;
     flex-direction: column-reverse;
+    align-items: center;
   }
 
   @media screen and (max-width: 375px) {
@@ -33,13 +36,14 @@ export const StyledOrder = styled(Section)`
 `;
 
 export const LeftColumn = styled.div`
-  width: ${leftWidth};
+  max-width: ${leftWidth};
   padding-right: ${(props) => props.theme.indent};
   overflow-y: overlay;
   max-height: 100%;
 
   @media screen and (max-width: 1023px) {
     display: flex;
+    flex-direction: column;
   }
 `;
 

@@ -24,7 +24,7 @@ export const ContentWrapper = styled.div`
 export const ProductTitle = styled(Title)`
   margin-bottom: 15px;
 
-  @media screen and (max-width: 906px) {
+  @media screen and (max-width: 1279px) {
     text-align: center;
   }
 `;
