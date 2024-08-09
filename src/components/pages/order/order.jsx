@@ -51,7 +51,7 @@ function Order({ products }) {
   return products && products.length ? (
     <StyledOrder as="form">
       <LeftColumn>
-        <Panel marginBottom={20} paddingTop={24} paddingBottom={10}>
+        {/* <Panel marginBottom={20} paddingTop={24} paddingBottom={10}>
           <Title as="h2" size={TitleSize.EXTRA_SMALL} marginBottom={12}>
             Choose your products
           </Title>
@@ -86,7 +86,7 @@ function Order({ products }) {
           >
             Buy
           </Button>
-        </Panel>
+        </Panel> */}
       </LeftColumn>
       <ProductSwiper
         spaceBetween={12}

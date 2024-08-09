@@ -25,6 +25,11 @@ const Panel = styled(Section)`
     gap: 24px;
     align-items: center;
   }
+
+  @media screen and (max-width: 396px) {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
 `;
 
 export default Panel;
