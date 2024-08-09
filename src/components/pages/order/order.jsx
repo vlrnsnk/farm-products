@@ -96,6 +96,8 @@ function Order({ products }) {
         mousewheel={{ releaseOnEdges: true }}
         pagination={{ type: "fraction" }}
         onSwiper={setSwiperRef}
+        allowTouchMove={true}
+        touchReleaseOnEdge={true}
       >
         $
         {products.map((product) => (

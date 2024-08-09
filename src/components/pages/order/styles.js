@@ -25,6 +25,11 @@ export const StyledOrder = styled(Section)`
     display: flex;
     flex-direction: column-reverse;
   }
+
+  @media screen and (max-width: 375px) {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
 `;
 
 export const LeftColumn = styled.div`
