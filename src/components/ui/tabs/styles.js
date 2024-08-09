@@ -25,6 +25,7 @@ export const Content = styled.div`
   text-align: left;
   max-height: ${(props) => props.$maxContentHeight || "none"};
   overflow-y: overlay;
+  margin-bottom: 8px;
 `;
 
 export const TabListItem = styled(Li)`
