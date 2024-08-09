@@ -93,7 +93,7 @@ function Order({ products }) {
         direction="vertical"
         slidesPerView="auto"
         scrollbar={{ draggable: true }}
-        mousewheel
+        mousewheel={{ releaseOnEdges: true }}
         pagination={{ type: "fraction" }}
         onSwiper={setSwiperRef}
       >
