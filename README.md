@@ -3,6 +3,12 @@
 ## Description
 Farm Products is a single-page application (SPA) built using React and styled-components. The primary purpose of this project is to provide a user-friendly platform for showcasing various farm products. I created this project to address the need for a visually appealing and accessible way for consumers to browse and learn about different agricultural products. This project not only enhances the user experience but also demonstrates my skills in modern web development. Throughout this process, I learned about responsive design, component-based architecture, and the importance of accessibility.
 
+## Live Demo
+[Farm Products](https://farm-products-react.netlify.app/)
+
+## Screenshot
+![Screenshot of Farm Products](https://i.imgur.com/0mU009x.png)
+
 ## Features
 - **Dynamic Product List**: The application features a dynamic list of farm products that can be easily updated and managed.
 - **Swiper Integration**: Implemented Swiper for smooth product navigation and enhanced visual appeal.
