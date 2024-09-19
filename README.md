@@ -7,7 +7,7 @@ Farm Products is a single-page application (SPA) built using React and styled-co
 [Farm Products](https://farm-products-react.netlify.app/)
 
 ## Screenshot
-![Screenshot of Farm Products](https://i.imgur.com/0mU009x.png)
+[![Screenshot of Farm Products](https://i.imgur.com/0mU009x.png)](https://farm-products-react.netlify.app/)
 
 ## Features
 - **Dynamic Product List**: The application features a dynamic list of farm products that can be easily updated and managed.
